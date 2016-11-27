@@ -8,12 +8,12 @@
   "author": "Jess Telford <jess+github@jes.st>",
   "license": "ISC",
   "scripts": {
-    "dist": "mkdir -p lib && NODE_ENV=production browserify src/index.js --verbose -t babelify -g uglifyify --debug -t [envify --NODE_ENV production ] | exorcist dist/out.map > dist/out.js && uglifyjs dist/out.js --screw-ie8 -c -m --in-source-map dist/out.map --source-map dist/index.min.js.map --source-map-url index.min.js.map > dist/index.min.js && rm dist/out*",
+    "dist": "mkdir -p lib && BROWSERIFYSWAP_ENV=production NODE_ENV=production browserify src/index.js --verbose -t babelify -g uglifyify -t browserify-swap --debug -t [envify --NODE_ENV production ] | exorcist dist/out.map > dist/out.js && uglifyjs dist/out.js --screw-ie8 -c -m --in-source-map dist/out.map --source-map dist/index.min.js.map --source-map-url index.min.js.map > dist/index.min.js && rm dist/out*",
     "test": "npm run test:lint",
     "test:lint:js": "eslint ./src",
     "test:lint:css": "stylelint './src/**/*.js'",
     "test:lint": "npm run test:lint:js && npm run test:lint:css",
-    "start": "NODE_ENV=development budo src/index.js:index.min.js --dir lib --live --port 8000 --open -- --debug --verbose -t babelify -t [envify --NODE_ENV development ]",
+    "start": "BROWSERIFYSWAP_ENV=development NODE_ENV=development budo src/index.js:index.min.js --dir lib --live --port 8000 --open -- --debug --verbose -t babelify -t browserify-swap -t [envify --NODE_ENV development ]",
     "ghpages": "npm run dist && gh-pages -d lib",
     "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md"
   },
@@ -22,6 +22,7 @@
     "babel-preset-react": "^6.16.0",
     "babelify": "^7.3.0",
     "browserify": "^13.1.1",
+    "browserify-swap": "^0.2.2",
     "budo": "^9.2.2",
     "changelog-verify": "^1.0.4",
     "envify": "^3.4.1",
@@ -45,6 +46,15 @@
       "stage-0",
       "react"
     ]
+  },
+  "browserify-swap": {
+    "@packages": [ "react-presents" ],
+    "development": {
+      ".*TouchNav.*": "./src/dummy-touch-nav.js"
+    },
+    "production": {
+      ".*TouchNav.*": "./src/dummy-touch-nav.js"
+    }
   },
   "stylelint": {
     "processors": [
