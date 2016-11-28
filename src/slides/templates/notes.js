@@ -14,6 +14,10 @@ const Container = styled.div`
   width: 100%;
   height: 41vh;
   overflow-y: auto;
+
+  & > ul {
+    margin: 0;
+  }
 `;
 
 const StyledPreview = styled.iframe`
