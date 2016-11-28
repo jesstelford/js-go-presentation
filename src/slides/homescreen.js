@@ -14,6 +14,7 @@ const SlideNotes = (props) => (
 export default (props) => (
   <ContentSlide>
     Save to Homescreen
+    ??? Keep this in?
     {props.showNotes ? <SlideNotes {...props} /> : ''}
   </ContentSlide>
 );
