@@ -5,7 +5,9 @@ import styled from 'styled-components';
 import Theme from './theme';
 
 const slides = [
-  require('./slides/title').default
+  require('./slides/title').default,
+  require('./slides/foo').default,
+  require('./slides/another').default,
 ]
 
 const StyledWrapper = styled.div`
@@ -16,9 +18,14 @@ export default () => (
   <StyledWrapper>
     <Theme />
     <Presentation disableTheme router={HashRouter}>
-      {slides.map((component, index) => (
-        <Slide component={component} key={index} />
-      ))}
+      {({presentation}) => (
+        slides.map((Component, index) => (
+          <Slide
+            key={index}
+            render={props => <Component {...props} presentation={presentation} />}
+          />
+        ))
+      )}
     </Presentation>
   </StyledWrapper>
 )

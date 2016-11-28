@@ -1,11 +1,24 @@
 import React from 'react'
 import styled from 'styled-components';
-import { ContentSlide } from 'react-presents'
+import { ContentSlide, Step } from 'react-presents'
 import TitleTemplate from './templates/title';
+import Notes from './templates/notes';
 
-const StyledContentSlide = styled(ContentSlide)`
-  background-color: #dddfde;
+const StyledTitleTemplate = styled(TitleTemplate)`
+  background-image: url('/img/vr-arms-wide.png');
+  background-repeat: no-repeat;
+  background-position: right 50% bottom -10vw;
+  background-size: auto 50vh;
 `;
+
+const LargeText = styled.span`
+  font-size: 13rem;
+`
+
+const SuperText = styled.span`
+  font-size: 5rem;
+  vertical-align: top;
+`
 
 const Highlighted = styled.span`
   color: #c02c02;
@@ -17,15 +30,31 @@ const Highlighted = styled.span`
 
 const TitleText = () => (
   <span>
-    How to build a
-    <Highlighted>
-      3D Location Aware MMOG with Social Interactions and Augmented Reality
-    </Highlighted>
-    in your browser today!
+    <Step index={0} exact>
+      <LargeText>Building Pokémon Go<SuperText>&trade;</SuperText> in <Highlighted>100% JS</Highlighted></LargeText>
+    </Step>
+    <Step index={1} exact>
+      <span>
+        How to build a
+        <Highlighted>
+          3D Location Aware MMOG with Social Interactions and Augmented Reality
+        </Highlighted>
+        in your browser today!
+      </span>
+    </Step>
   </span>
 );
 
-export default () => (
-  <TitleTemplate title={<TitleText />}>
-  </TitleTemplate>
+const SlideNotes = (props) => (
+  <Notes {...props}>
+    <ul>
+      <li>Not associated with Niantic. "Pokémon Go" is trademarked Nintendo / Niantic</li>
+    </ul>
+  </Notes>
+)
+
+export default (props) => (
+  <StyledTitleTemplate title={<TitleText />}>
+    {props.showNotes ? <SlideNotes {...props} /> : ''}
+  </StyledTitleTemplate>
 );

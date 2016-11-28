@@ -48,7 +48,9 @@
     ]
   },
   "browserify-swap": {
-    "@packages": [ "react-presents" ],
+    "@packages": [
+      "react-presents"
+    ],
     "development": {
       ".*TouchNav.*": "./src/dummy-touch-nav.js"
     },
@@ -69,7 +71,7 @@
     "react-addons-shallow-compare": "^15.4.1",
     "react-codemirror": "^0.3.0",
     "react-dom": "^15.4.1",
-    "react-presents": "^0.6.6",
+    "react-presents": "jesstelford/react-presents#notes",
     "react-router": "next"
   }
 }

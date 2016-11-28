@@ -46,7 +46,7 @@ const globalStyles = `
     margin: 0 0 1rem;
   }
   h1 {
-    font-size: 4.5rem;
+    font-size: 7rem;
   }
   h2 {
     font-size: 1.75rem;
