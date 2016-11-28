@@ -5,6 +5,9 @@ import { ContentSlide } from 'react-presents'
 const StyledContentSlide = styled(ContentSlide)`
   text-align: center;
   background-color: #dddfde;
+  background-repeat: no-repeat;
+  background-position: right 50% bottom -10vw;
+  background-size: auto 50vh;
 
   & > h1 {
     position: relative;
@@ -12,8 +15,6 @@ const StyledContentSlide = styled(ContentSlide)`
     transform: translateY(-10vw);
     padding-right: inherit;
   }
-
-  ${({styleOverrides}) => styleOverrides}
 `;
 
 export default (props) => (
