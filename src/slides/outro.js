@@ -34,7 +34,7 @@ const TitleText = () => (
       <span>
         How to build a
         <Highlighted>
-          3D Location Aware MMOG with Shared World and Augmented Reality
+          3D Location Aware Offline First MMOG with Shared World and Augmented Reality
         </Highlighted>
         in your browser today!
       </span>
@@ -44,9 +44,7 @@ const TitleText = () => (
 
 const SlideNotes = (props) => (
   <Notes {...props}>
-    <ul>
-      <li>Not associated with Niantic. "Pokémon Go" is trademarked Nintendo / Niantic</li>
-    </ul>
+    Fin.
   </Notes>
 )
 

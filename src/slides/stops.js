@@ -35,6 +35,8 @@ export default (props) => (
       <li>Demo POI on map</li>
       <li><code>(show basics)</code></li>
       <li>"Coupled with <code>navigator.geolocation</code>; get real-time locations nearby"</li>
+      <li>"The same technique can be used for monsters"</li>
+      <li>"Instead of Foursquare, we can generate them ourselves"</li>
     </ul>
 
     {props.showNotes ? <SlideNotes {...props} /> : ''}
