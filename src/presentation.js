@@ -10,11 +10,9 @@ const slides = [
   require('./slides/location').default,
   require('./slides/homescreen').default,
   require('./slides/stops').default,
-  require('./slides/gyms').default,
   require('./slides/shared').default,
   require('./slides/offline').default,
   require('./slides/ar').default,
-  require('./slides/pvp').default,
   require('./slides/outro').default,
 ];
 
