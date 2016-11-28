@@ -5,7 +5,7 @@ import TitleTemplate from './templates/title';
 import Notes from './templates/notes';
 
 const StyledTitleTemplate = styled(TitleTemplate)`
-  background-image: url('/img/vr-arms-wide.png');
+  background-image: url('./img/vr-arms-wide.png');
   background-repeat: no-repeat;
   background-position: right 50% bottom -10vw;
   background-size: auto 50vh;
