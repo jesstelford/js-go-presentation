@@ -4,8 +4,11 @@ import { ContentSlide, Step } from 'react-presents'
 import Notes from './templates/notes';
 
 const Slide = styled(ContentSlide)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10vh 0;
   text-align: center;
-  vertical-align: middle;
 
   & h1 {
     font-size: 10rem;
@@ -16,18 +19,6 @@ const Slide = styled(ContentSlide)`
 const Online = styled.div`
   padding-top: 5vh;
   font-size: 8rem;
-`;
-
-const GitHub = styled(Online)`
-
-`;
-
-const Twitter = styled(Online)`
-
-`;
-
-const Talk = styled(Online)`
-
 `;
 
 const SlideNotes = (props) => (
@@ -47,9 +38,8 @@ const SlideNotes = (props) => (
 export default (props) => (
   <Slide>
     <h1>Hi, I'm Jess Telford 👋</h1>
-    <GitHub>@jesstelford</GitHub>
-    <Twitter>@jesstelford</Twitter>
-    <Talk><a href="https://bit.ly/js-go-talk">bit.ly/js-go-talk</a></Talk>
+    <Online>@jesstelford</Online>
+    <Online><a href="https://bit.ly/js-go-talk">bit.ly/js-go-talk</a></Online>
 
     {props.showNotes ? <SlideNotes {...props} /> : ''}
   </Slide>
