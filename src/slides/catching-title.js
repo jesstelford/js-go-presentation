@@ -1,15 +1,17 @@
 import React from 'react'
 import styled from 'styled-components';
-import { ContentSlide, Step } from 'react-presents'
+import { Step } from 'react-presents'
+import Subtitle from './templates/subtitle';
 import Notes from './templates/notes';
 
 const SlideNotes = (props) => (
   <Notes {...props}>
     <ul>
-      <li>"Let's start by talking about 3D"</li>
-      <li>"Done in the browser via WebGL (is hard)"</li>
-      <li>Show demo of static scene with ball + monster + background (no tilt controls)</li>
-      <li>"Simple scene should have simple code: It does, thanks to aframe!"</li>
+      <li>3D!</li>
+      <li>WebGL in browser (is hard)</li>
+      <li>Demo</li>
+      <li>Simple scene == simple code: Aframe!</li>
+
       <li><a-scene>...</a-scene></li>
       <li>"Aframe also does tilt controls"</li>
       <li>Demo of same scene with tilt controls enabled</li>
@@ -26,9 +28,8 @@ const SlideNotes = (props) => (
 )
 
 export default (props) => (
-  <ContentSlide>
-    <h1>Catching</h1>
-
+  <Subtitle>
+    <h1>Catching Monsters</h1>
     {props.showNotes ? <SlideNotes {...props} /> : ''}
-  </ContentSlide>
+  </Subtitle>
 );
