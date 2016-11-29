@@ -15,6 +15,7 @@ const Container = styled.div`
   width: 100%;
   height: 41vh;
   overflow-y: auto;
+  font-size: 2.5rem;
 
   & > ul {
     margin: 0;
