@@ -1,20 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import { ContentSlide, Step } from 'react-presents'
+import Slide from './templates/slide';
 import Notes from './templates/notes';
-
-const Slide = styled(ContentSlide)`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 10vh 0;
-  text-align: center;
-
-  & h1 {
-    font-size: 10rem;
-    padding-right: initial;
-  }
-`;
 
 const Online = styled.div`
   padding-top: 5vh;
