@@ -13,7 +13,6 @@ const slides = [
   require('./slides/catching-title').default,
   require('./slides/catching-code').default,
   require('./slides/location').default,
-  require('./slides/homescreen').default,
   require('./slides/stops').default,
   require('./slides/shared').default,
   require('./slides/offline').default,
