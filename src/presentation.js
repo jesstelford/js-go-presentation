@@ -7,8 +7,11 @@ import Theme from './theme';
 const slides = [
   require('./slides/whoami').default,
   require('./slides/intro').default,
+  require('./slides/3d-title').default,
+  require('./slides/3d-scene').default,
+  require('./slides/3d-tilt').default,
   require('./slides/catching-title').default,
-  require('./slides/catching').default,
+  require('./slides/catching-code').default,
   require('./slides/location').default,
   require('./slides/homescreen').default,
   require('./slides/stops').default,

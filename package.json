@@ -16,7 +16,7 @@
     "start": "BROWSERIFYSWAP_ENV=development NODE_ENV=development budo src/index.js:index.min.js --dir lib --live --port 8000 --open -- --debug --verbose -t babelify -t browserify-swap -t [envify --NODE_ENV development ]",
     "ghpages": "npm run dist && gh-pages -d lib",
     "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md",
-    "build:react-presents": "cd node_modules/react-presents/ && yarn && yarn run build:commonjs",
+    "build:react-presents": "cd node_modules/react-presents/ && yarn && yarn run build:commonjs && rm -rf node_modules",
     "prepublish": "in-install && npm run build:react-presents || not-in-install"
   },
   "devDependencies": {
@@ -75,7 +75,7 @@
     "react-addons-shallow-compare": "^15.4.1",
     "react-codemirror": "^0.3.0",
     "react-dom": "^15.4.1",
-    "react-presents": "jesstelford/react-presents#97fd13b",
+    "react-presents": "jesstelford/react-presents#1bff91c",
     "react-router": "next"
   }
 }

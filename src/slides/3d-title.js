@@ -7,15 +7,17 @@ import Notes from './templates/notes';
 const SlideNotes = (props) => (
   <Notes {...props}>
     <ul>
-      <li>Make it interactive</li>
-      <li><i>Demo: click + drag</i></li>
+      <li>3D!</li>
+      <li>WebGL in browser (is hard)</li>
+      <li><i>Demo</i></li>
+      <li>&raquo; Simple scene == simple code: Aframe!</li>
     </ul>
   </Notes>
 )
 
 export default (props) => (
   <Subtitle>
-    <h1>Catching Monsters</h1>
+    <h1>3D In The Browser</h1>
     {props.showNotes ? <SlideNotes {...props} /> : ''}
   </Subtitle>
 );

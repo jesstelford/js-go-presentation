@@ -5,6 +5,7 @@ const Container = styled.div`
   position: fixed;
   left: 0;
   bottom: 0;
+  z-index: 999;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.9);
   color: #333;
