@@ -1,4 +1,5 @@
-/lib/
+/lib/*.js
+/lib/*.js.map
 # Created by https://www.gitignore.io/api/node,linux,vim
 
 ### Node ###
