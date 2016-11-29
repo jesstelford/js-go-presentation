@@ -8,6 +8,7 @@ const slides = [
   require('./slides/whoami').default,
   require('./slides/intro').default,
   require('./slides/3d-title').default,
+  require('./slides/3d-aframe').default,
   require('./slides/3d-scene').default,
   require('./slides/3d-tilt').default,
   require('./slides/catching-title').default,

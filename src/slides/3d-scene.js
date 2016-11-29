@@ -22,6 +22,7 @@ const SlideNotes = (props) => (
   <Notes {...props}>
     <ul>
       <li>Aframe === HTML custom elements</li>
+      <li>Not taking advantage of device sensors</li>
       <li>&raquo; Tilt controls</li>
     </ul>
   </Notes>

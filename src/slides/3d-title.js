@@ -10,7 +10,6 @@ const SlideNotes = (props) => (
       <li>3D!</li>
       <li>WebGL in browser (is hard)</li>
       <li><i>Demo</i></li>
-      <li>&raquo; Simple scene == simple code: Aframe!</li>
     </ul>
   </Notes>
 )
