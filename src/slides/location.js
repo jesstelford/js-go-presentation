@@ -29,12 +29,12 @@ export default (props) => (
       <li>"Ok, let's zoom in on our current location"</li>
 
       <li><h2><code>navigator.geolocation</code></h2></li>
-      <li><code>
-        navigator.geolocation.watchPosition(position => {
-          const lat = position.coords.latitude;
-          const long = position.coords.longitude;
-        });
-      </code></li>
+      <li><pre><code>{`
+navigator.geolocation.watchPosition(position => {
+  const lat = position.coords.latitude;
+  const long = position.coords.longitude;
+});
+      `.trim()}</code></pre></li>
       <li>"Will ask for permission"</li>
       <li>"Gives latitude + longitude - just what we need to center the map"</li>
       <li>Demo a centered mapbox map</li>
