@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Theme from './theme';
 
 const slides = [
+  require('./slides/whoami').default,
   require('./slides/intro').default,
   require('./slides/catching').default,
   require('./slides/location').default,
