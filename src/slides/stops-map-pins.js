@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Code, Step } from 'react-presents'
+import { Step } from 'react-presents'
+import Code from './templates/code';
 import Notes from './templates/notes';
 import Slide from './templates/slide';
 
