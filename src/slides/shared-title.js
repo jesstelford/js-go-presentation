@@ -1,22 +1,22 @@
 import React from 'react'
 import styled from 'styled-components';
-import { ContentSlide, Step } from 'react-presents'
+import { Step } from 'react-presents'
+import Subtitle from './templates/subtitle';
 import Notes from './templates/notes';
 
 const SlideNotes = (props) => (
   <Notes {...props}>
     <ul>
-      <li>...</li>
+      <li>The "MMO" part</li>
+      <li>Sharing Monsters &amp; Item Locations</li>
+      <li>Node.js on the server!</li>
     </ul>
   </Notes>
 )
 
 export default (props) => (
-  <ContentSlide>
+  <Subtitle>
     <h1>Shared World</h1>
-    <ul>
-      <li>"Everyone now sharing the same location / world data"</li>
-    </ul>
     {props.showNotes ? <SlideNotes {...props} /> : ''}
-  </ContentSlide>
+  </Subtitle>
 );

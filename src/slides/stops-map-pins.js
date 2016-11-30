@@ -28,6 +28,7 @@ const SlideNotes = (props) => (
       <li>Injected based on foursquare data</li>
       <li>Can be any data</li>
       <li>Can be monsters too</li>
+      <li>&raquo; But once per client!?</li>
     </ul>
   </Notes>
 )
@@ -35,10 +36,10 @@ const SlideNotes = (props) => (
 const code = `
 <a-scene>
   <a-map>
-    <a-cone position="<long lat>"></a-cone>
-    <a-cone position="<long lat>"></a-cone>
-    <a-cone position="<long lat>"></a-cone>
-    <a-cone position="<long lat>"></a-cone>
+    <a-cone position="[long lat]"></a-cone>
+    <a-cone position="[long lat]"></a-cone>
+    <a-cone position="[long lat]"></a-cone>
+    <a-cone position="[long lat]"></a-cone>
   </a-map>
 </a-scene>
 `.trim()
