@@ -56,7 +56,7 @@ export default (props) => (
       <StyledCode value={code} />
     </Step>
     <Step index={1} exact>
-      <StyledCode highlightLines={[[4, 7], [11, 13]]} value={code} />
+      <StyledCode dimLines={[[0, 3], [8, 10], [14, 14]]} value={code} />
     </Step>
     <Step index={2} exact>
       <DemoLink target="_blank" href="https://jesstelford.github.io/aframe-map/gps/">Demo: 3D Maps</DemoLink>

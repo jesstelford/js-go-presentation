@@ -29,7 +29,7 @@ const SlideNotes = (props) => (
 
 export default (props) => (
   <Slide>
-    <StyledCode highlightLines={[[0, 0], [2, 2], [8, 9]]} value={`
+    <StyledCode dimLines={[[1, 1], [3, 7], [10, 13]]} value={`
 <a-scene physics>
   <a-box
     static-body

@@ -54,7 +54,7 @@ export default (props) => (
       <StyledCode value={code} />
     </Step>
     <Step index={1} exact>
-      <StyledCode highlightLines={[[1, 1], [12, 12]]} value={code} />
+      <StyledCode dimLines={[[0, 0], [2, 11], [13, 17]]} value={code} />
     </Step>
     {props.showNotes ? <SlideNotes {...props} /> : ''}
   </Slide>

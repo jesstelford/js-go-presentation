@@ -31,7 +31,7 @@ const SlideNotes = (props) => (
 
 export default (props) => (
   <Slide>
-    <StyledCode highlightLines={[[6, 6], [12, 12]]} value={`
+    <StyledCode dimLines={[[0, 5], [7, 11], [13, 14]]} value={`
 <a-scene>
   <a-box
     position="0 0.5 -2"
