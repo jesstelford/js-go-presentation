@@ -8,15 +8,6 @@ const StyledTitleTemplate = styled(TitleTemplate)`
   background-image: url('./img/vr-arms-wide.png');
 `;
 
-const LargeText = styled.span`
-  font-size: 13rem;
-`
-
-const SuperText = styled.span`
-  font-size: 5rem;
-  vertical-align: top;
-`
-
 const Highlighted = styled.span`
   color: #c02c02;
 
@@ -27,18 +18,13 @@ const Highlighted = styled.span`
 
 const TitleText = () => (
   <span>
-    <Step index={0} exact>
-      <LargeText>Building Pokémon Go<SuperText>&trade;</SuperText> in <Highlighted>100% JS</Highlighted></LargeText>
-    </Step>
-    <Step index={1} exact>
-      <span>
-        How to build a
-        <Highlighted>
-          3D Location Aware Offline First MMOG with Shared World and Augmented Reality
-        </Highlighted>
-        in your browser today!
-      </span>
-    </Step>
+    <span>
+      How to build a
+      <Highlighted>
+        3D Location Aware Offline First MMOG with Shared World and Augmented Reality
+      </Highlighted>
+      in your browser today!
+    </span>
   </span>
 );
 
