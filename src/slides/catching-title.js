@@ -4,6 +4,13 @@ import { Step } from 'react-presents'
 import Subtitle from './templates/subtitle';
 import Notes from './templates/notes';
 
+const StyledSubtitle = styled(Subtitle)`
+  h1 {
+    font-size: 25rem;
+    line-height: 23rem;
+  }
+`;
+
 const SlideNotes = (props) => (
   <Notes {...props}>
     <ul>
@@ -14,8 +21,8 @@ const SlideNotes = (props) => (
 )
 
 export default (props) => (
-  <Subtitle>
+  <StyledSubtitle>
     <h1>Catching Monsters</h1>
     {props.showNotes ? <SlideNotes {...props} /> : ''}
-  </Subtitle>
+  </StyledSubtitle>
 );
