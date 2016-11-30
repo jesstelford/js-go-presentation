@@ -14,6 +14,7 @@ const StyledContentSlide = styled(ContentSlide)`
     top: 20vh;
     transform: translateY(-10vw);
     padding-right: inherit;
+    font-size: 6.4rem;
   }
 `;
 
