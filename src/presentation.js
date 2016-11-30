@@ -31,7 +31,13 @@ const slides = [
   require('./slides/offline-sw-code').default,
   require('./slides/offline-sw-precache').default,
   require('./slides/offline-sw-prerequisite').default,
-  require('./slides/ar').default,
+  require('./slides/ar-title').default,
+  require('./slides/ar-parts').default,
+  require('./slides/ar-camera-access').default,
+  require('./slides/ar-3d-video').default,
+  require('./slides/ar-positioning').default,
+  require('./slides/ar-frustum-lock').default,
+  require('./slides/ar-demo').default,
   require('./slides/outro').default,
 ];
 
