@@ -12,6 +12,7 @@ const slides = [
   require('./slides/3d-scene').default,
   require('./slides/3d-tilt').default,
   require('./slides/catching-title').default,
+  require('./slides/catching-demo').default,
   require('./slides/catching-code').default,
   require('./slides/location-title').default,
   require('./slides/location-tools').default,

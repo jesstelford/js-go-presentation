@@ -15,7 +15,6 @@ const SlideNotes = (props) => (
   <Notes {...props}>
     <ul>
       <li>Make it interactive</li>
-      <li><i>Demo: click + drag</i></li>
     </ul>
   </Notes>
 )

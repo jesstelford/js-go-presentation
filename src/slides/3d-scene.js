@@ -29,14 +29,22 @@ const SlideNotes = (props) => (
   </Notes>
 )
 
+const DemoLink = styled.a`
+  font-size: 6rem;
+`;
+
 export default (props) => (
   <Slide>
-    <StyledCode value={`
+    <Step index={0} exact>
+      <DemoLink target="_blank" href="https://aframe-scene-micmryyhxb.now.sh/">Demo: Aframe Scene</DemoLink>
+    </Step>
+    <Step index={1} exact>
+      <StyledCode value={`
 <a-scene>
   <a-box
     position="0 0.5 -2"
     width="0.5" height="1" depth="0.5"
-    color="green"
+    color="blue"
   ></a-box>
   <a-sphere
     position="0 -0.5 -1"
@@ -46,6 +54,7 @@ export default (props) => (
   <a-sky src="./img/background.png"></a-sky>
 </a-scene>
     `.trim()} />
+    </Step>
 
     {props.showNotes ? <SlideNotes {...props} /> : ''}
   </Slide>

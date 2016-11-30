@@ -16,7 +16,6 @@ const SlideNotes = (props) => (
     <ul>
       <li>3D!</li>
       <li>WebGL in browser (is hard)</li>
-      <li><i>Demo</i></li>
     </ul>
   </Notes>
 )
