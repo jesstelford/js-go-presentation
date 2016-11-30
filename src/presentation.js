@@ -25,7 +25,12 @@ const slides = [
   require('./slides/shared-express').default,
   require('./slides/shared-mongo').default,
   require('./slides/shared-mongo-code').default,
-  require('./slides/offline').default,
+  require('./slides/offline-title').default,
+  require('./slides/offline-no-js').default,
+  require('./slides/offline-sw').default,
+  require('./slides/offline-sw-code').default,
+  require('./slides/offline-sw-precache').default,
+  require('./slides/offline-sw-prerequisite').default,
   require('./slides/ar').default,
   require('./slides/outro').default,
 ];

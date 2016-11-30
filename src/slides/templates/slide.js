@@ -11,4 +11,9 @@ export default styled(ContentSlide)`
     font-size: 10rem;
     padding-right: initial;
   }
+
+  & h2 {
+    font-size: 6rem;
+    padding-right: initial;
+  }
 `;
