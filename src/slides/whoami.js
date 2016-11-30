@@ -16,13 +16,10 @@ const StyledSlide = styled(Slide)`
 const SlideNotes = (props) => (
   <Notes {...props}>
     <ul>
-      <li>1998: Making games</li>
-      <li>2009: AR game on DS</li>
-      <li>2010: Web dev</li>
-      <li>Early Foursquare, Zombie Hood, geocaching</li>
-      <li>Now; FE TL @ Domain.com.au</li>
-      <li>Pokemon Go is an interesting cross section of above</li>
-      <li>Possible on web?</li>
+      <li>First website in 2005</li>
+      <li>last 2 years Domain FE TL</li>
+      <li>First talk since my son born</li>
+      <li>Start with a joke!</li>
     </ul>
   </Notes>
 )

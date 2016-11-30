@@ -45,8 +45,11 @@ const TitleText = () => (
 const SlideNotes = (props) => (
   <Notes {...props}>
     <ul>
+      <li>"Pokémon Go" is trademarked Niantic</li>
+      <li>1998: Making games</li>
+      <li>2009: AR game on DS</li>
+      <li>Pokemon Go === cross section of tech</li>
       <li>Long title isn't as catchy</li>
-      <li>Not associated with "Pokémon Go" - it's trademarked Nintendo / Niantic</li>
     </ul>
   </Notes>
 )
