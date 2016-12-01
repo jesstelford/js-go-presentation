@@ -7,9 +7,18 @@ import Notes from './templates/notes';
 const StyledTitleTemplate = styled(TitleTemplate)`
 `;
 
-const LargeText = styled.span`
+const LargeText = styled.div`
   font-size: 13rem;
 `
+
+const NotesInfo = styled.code`
+  font-size: 5rem;
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+`;
 
 const SuperText = styled.span`
   font-size: 5rem;
@@ -30,13 +39,13 @@ const TitleText = () => (
       <LargeText>Building Pokémon Go<SuperText>&trade;</SuperText> in <Highlighted>100% JS</Highlighted></LargeText>
     </Step>
     <Step index={1} exact>
-      <span>
+      <div>
         How to build a
         <Highlighted>
           3D Location Aware Offline First Monster Catching MMOG with Shared World and Augmented Reality
         </Highlighted>
         in your browser today!
-      </span>
+      </div>
     </Step>
   </span>
 );
@@ -55,6 +64,7 @@ const SlideNotes = (props) => (
 
 export default (props) => (
   <StyledTitleTemplate title={<TitleText />}>
+    <NotesInfo>Press 's' to see notes</NotesInfo>
     {props.showNotes ? <SlideNotes {...props} /> : ''}
   </StyledTitleTemplate>
 );

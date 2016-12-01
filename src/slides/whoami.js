@@ -6,6 +6,10 @@ import Notes from './templates/notes';
 
 const Online = styled.div`
   padding-top: 5vh;
+  font-size: 4rem;
+`;
+
+const FindMe = styled(Online)`
   font-size: 8rem;
 `;
 
@@ -27,8 +31,8 @@ const SlideNotes = (props) => (
 export default (props) => (
   <StyledSlide>
     <h1>Hi, I'm Jess Telford 👋</h1>
-    <Online>@jesstelford</Online>
-    <Online><a href="https://bit.ly/js-go-talk">bit.ly/js-go-talk</a></Online>
+    <FindMe>@jesstelford</FindMe>
+    <Online><a href="https://github.com/jesstelford/js-go-presentation">Code for slides available here</a></Online>
 
     {props.showNotes ? <SlideNotes {...props} /> : ''}
   </StyledSlide>
