@@ -5,7 +5,6 @@ import TitleTemplate from './templates/title';
 import Notes from './templates/notes';
 
 const StyledTitleTemplate = styled(TitleTemplate)`
-  background-image: url('./img/vr-arms-wide.png');
 `;
 
 const LargeText = styled.span`
