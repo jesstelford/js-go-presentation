@@ -18,7 +18,7 @@ const SlideNotes = (props) => (
 
 export default (props) => (
   <Slide>
-    <DemoLink target="_blank" href="TODO">Demo: AR in JS</DemoLink>
+    <DemoLink target="_blank" href="https://lib-gdvdsmawla.now.sh">Demo: AR in JS</DemoLink>
     {props.showNotes ? <SlideNotes {...props} /> : ''}
   </Slide>
 );
